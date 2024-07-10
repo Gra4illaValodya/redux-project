@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-
+import { legacy_createStore as createStore } from "redux";
+import reducer from "./reducer/reducer";
 import { Provider } from "react-redux";
-import { reducer } from "./redux/reducer";
-import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import "./index.css";
 import "./App.css";
